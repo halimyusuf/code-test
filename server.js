@@ -9,8 +9,9 @@ app.use(express.json());
 
 const sanitizer = require("express-html-sanitizer");
 
-// const db = "mongodb+srv://dev:i4pHkT9ZorKKtm6s@cluster0.og5h6.mongodb.net/devtest?retryWrites=true&w=majority";
-const db = "mongodb://localhost:27017/code-test-aug-2022";
+const db =
+  "mongodb+srv://dev:i4pHkT9ZorKKtm6s@cluster0.og5h6.mongodb.net/devtest?retryWrites=true&w=majority";
+// const db = "mongodb://localhost:27017/code-test-aug-2022";
 //connect to Mongo
 mongoose
   .connect(db, {

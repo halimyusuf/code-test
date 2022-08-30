@@ -5,7 +5,9 @@ const server = require("../../server");
 
 describe("contact tetss", () => {
   beforeAll(async () => {
-    const db = "mongodb://localhost:27017/code-test-aug-2022";
+    // const db = "mongodb://localhost:27017/code-test-aug-2022";
+    const db =
+      "mongodb+srv://dev:i4pHkT9ZorKKtm6s@cluster0.og5h6.mongodb.net/devtest?retryWrites=true&w=majority";
     //connect to Mongo
     await mongoose.connect(db, {
       useNewUrlParser: true,
